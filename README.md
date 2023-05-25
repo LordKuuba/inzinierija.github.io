@@ -10,6 +10,7 @@ Konsultants auto mehāniķis: Kristaps Graudiņš.
 Pētāmo materiālu piekšķīra Kristaps Graudiņš.
 
 Izmantotās programmas:
+
   *Github https://github.com/
   
   *Notepad++ https://notepad-plus-plus.org/
