@@ -50,6 +50,7 @@ ul {
 input.Button, Button {
   border: none;
   color: #212121;
+  background-color: #E0E0E0;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
