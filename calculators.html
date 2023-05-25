@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<title>Attiecibu Kalkulators</title>
+	</head>
+	<body>
+		<a href="index.html"><button>Doties Atpakaļ</button></a>
+		<br>
+		<div class = "center">
+		<input type = "number" id = "INP_1" placeholder = "Ievadiet 1 Zobratu" class = "MathInput">
+		<br>
+		<input type = "number" id = "INP_2" placeholder = "Ievadiet 2 Zobratu" class = "MathInput">
+		<p id = "OUT_1"></p>
+		<input type = "button" id = "BTN_1" value = "aprēķināt" class = "Button"></input>
+		<h1>Vārdiskais pieraksts</h1>
+		
+		<p id = "OUT_2"> Piem. Kamēr pirmais zobrats apgriezīsies 1 reizi otrais apgriezīsies 0.5 reizes</p>
+		<h2>Kā aprēķināt?</h2>
+		<p>Lai aprēķinātu griešanos atiecību vajag 1.zobrata zobu daudzumu / 2.zobrata zobu daudzumu.</p>
+		</div>
+		
+	</body>
+	
+	<script>
+		const INPUT_1 = document.getElementById("INP_1");
+		const INPUT_2 = document.getElementById("INP_2");
+		
+		const OUTPUT = document.getElementById("OUT_1");
+		const MUTV_OUTPUT = document.getElementById("OUT_2");
+		
+		const BUTTON_1 = document.getElementById("BTN_1");
+		
+		var RESULT;
+		
+		function calculate(){
+			var INPUT_1_VALUE = INPUT_1.value;
+			var INPUT_2_VALUE = INPUT_2.value;
+			
+			if(INPUT_1_VALUE <= 0 || INPUT_2_VALUE <= 0){
+				OUTPUT.innerHTML = "skaitļi nedrīkst būt vienādiem ar 0";
+			}else{
+				RESULT = INPUT_1_VALUE/INPUT_2_VALUE;
+				OUTPUT.innerHTML = "Attiecība ir: 1 pret" + " " +RESULT;
+				OUT_2.innerHTML = "Kamēr pirmais zobrats apgriezīsies 1 reizi otrais apgriezīsies " + RESULT + " reizes.";
+			}
+			
+		}
+		
+		BUTTON_1.addEventListener("click", calculate);
+	</script>
+</html>

@@ -1,0 +1,163 @@
+body {
+	background-color: #F4F4F4;
+}
+h1 {
+	font-family: Courier;
+	color: #2E2E2E;
+	font-size: 143%;
+	text-align: center;
+}
+h2	{
+	font-family: Courier ;
+	color: #2E2E2E;
+	font-size: 120%;
+	text-align: center;
+	
+}
+p {
+	font-family: Courier ;
+	color: #3B3B3B;
+	background-color: #E0E0E0;
+	font-size: 150%;
+	text-align: center;
+	border: 5px solid #AAAAAA;
+	border-bottom-right-radius: 10px 10px;
+	border-bottom-left-radius: 10px 10px;
+	border-top-right-radius: 10px 10px;
+	border-top-left-radius: 10px 10px;
+	max-width: 800px;
+}
+
+ul {
+	font-family: Courier ;
+	color: #3B3B3B;
+	background-color: #E0E0E0;
+	font-size: 150%;
+	text-align: left;
+	border: 5px solid #AAAAAA;
+	border-bottom-right-radius: 10px 10px;
+	border-bottom-left-radius: 10px 10px;
+	border-top-right-radius: 10px 10px;
+	border-top-left-radius: 10px 10px;
+}
+
+.center{
+	margin: auto;
+	width: 50%;
+	padding: 15px;
+}
+
+input.Button {
+  border: none;
+  color: #3B3B3B;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+Button {
+  border: none;
+  color: #3B3B3B;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+/*Paskaistināt!*/
+input.MathInput{
+	padding: 5px 0;
+}
+
+.GearPhoto{
+	width: 562px;
+	height: 460px;
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.BigGear{
+	position: absolute;
+	top: 300px;
+	right: 0px;
+	bottom: 0px;
+	left: 30px;
+	
+	
+	width: 256px;
+	height: 256px
+}
+
+.SmallGear{	
+	position: absolute;
+	top: 105px;
+	right: 0px;
+	bottom: 0px;
+	left: 335px;
+	
+	width: 156px;
+	height: 156px;
+}
+
+.Arrow1{
+	transform: rotate(-126deg);
+	
+	position: absolute;
+	top: 60px;
+	right: 0px;
+	bottom: 0px;
+	left: 241px;
+}
+
+.Arrow2{
+	transform: rotate(37deg);
+	
+	position: absolute;
+	top: 350px;
+	right: 0px;
+	bottom: 0px;
+	left: 328px;
+	
+}
+.SmallGear:hover{
+	-webkit-animation: spinBack 2s linear infinite;
+	-moz-animation: spinBack 2s linear infinite;
+	animation: spinBack 2s linear infinite;
+}
+.BigGear:hover{
+	-webkit-animation: spinBack 2s linear infinite;
+	-moz-animation: spinBack 2s linear infinite;
+	animation: spinBack 2s linear infinite;
+}
+
+@-webkit-keyframes spin{
+	100%{-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spin{
+	100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+	100%{-webkit-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes spinBack{
+	100%{-webkit-transform: rotate(-360deg);}
+}
+
+@-moz-keyframes spinBack{
+	100%{-webkit-transform: rotate(-360deg);}
+}
+@keyframes spinBack{
+	100%{-webkit-transform: rotate(-360deg);}
+}
