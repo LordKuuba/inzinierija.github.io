@@ -11,6 +11,9 @@ Pētāmo materiālu piekšķīra Kristaps Graudiņš.
 
 Izmantotās programmas:
   *Github https://github.com/
+  
   *Notepad++ https://notepad-plus-plus.org/
+  
   *Paint.net https://www.getpaint.net/download.html
+  
   *Google Docs https://www.google.com/docs
